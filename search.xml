@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[强化学习方法汇总]]></title>
+    <url>%2F2019%2F03%2F26%2F%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB%2F</url>
+    <content type="text"><![CDATA[强化学习方法汇总​ 是机器学习中的一个领域，强调如何基于环境而行动，以取得最大化的预期利益。其灵感来源于心理学中的行为主义理论，即有机体如何在环境给予的奖励或惩罚的刺激下，逐步形成对刺激的预期，产生能获得最大利益的习惯性行为。 Reference: 强化学习- 维基百科 不同的划分方式一、不理解环境(Model-Free RL) 和理解环境（Model-Based RL)不理解环境(Model-Free RL) ：​ 直接对环境作出动作，而后接收来自于环境的反馈，对于周围的环境是不理解的，没有概念的，作出动作后只能等待现实的反馈，是否这个动作的反馈会造成好的还是坏的结果，它也是没有概念的、不知道的。 例如：我们在现实世界投放一颗氢弹，然后我们成功把自己玩死了，这是一个很坏的结果，但我们事先对此没有概念，不知道做出这个“投放氢弹”会发生什么，我们只能去尝试一下，然后Die。 方法： Q learning Sarsa Policy Gradients learning 理解环境（Model-Based RL):​ 1、机器人会通过过往的经验，先理解真实世界是怎样的 ​ 2、建立一个模型来模拟现实世界的反馈(建立一个模拟现实) ​ 3、既可以在现实世界中作出动作，也可以在模拟世界中作出动作 这样就没必要去炸真实世界，连自己也炸死了，他可以像玩游戏一样炸炸游戏里的世界，也保住了自己的小命 进一步说明： ​ 基于Model-Based RL的机器人能通过想象来预判断接下来将要发生的所有情况。然后选择这些想象情况中最好的那种。并依据这种情况来采取下一步的策略。 方法： ​ 1、先在Model-Free RL的基础上添加了一层对于现实世界的建模(一个虚拟的世界) ​ 2、然后在这个模拟世界里进行Model-Free RL ( Q learning、Sarsa、Policy Gradients) 二、基于概率(Policy-Based RL) 和基于价值（Value-Based RL)基于概率(Policy-Based RL) :​ 机器人能通过感官分析所处的环境，直接输出下一步要采取的各种动作的概率，然后根据概率采取行动，所以每种动作都有可能被选中， 只是可能性不同，即使是大概率的动作也不一定会选到。 方法： Policy Gradients learning …. 基于价值（Value-Based RL):​ 在当前这一步，输出所有可能采取的动作(不连续的动作)的价值，我们会根据最高价值来选着动作，这种决策十分确定，只选取价值最高的 方法： Q learning Sarsa …. 基于概率与价值的结合创造了一种更好的方法： Actor-Critic ( 1、Actor ：基于概率做出一个动作 2、Critic 会对做出的动作给出动作的价值，这样就在原有的 policy gradients 上加速了学习过程) 对于连续动作： ​ Value-Based是无能为力的 ( 为什么会说无能为力？？？) ​ Policy-Based能用一个概率分布在连续动作中选取特定动作，是Policy-Based的优点之一 三、回合更新(Monte-Carlo update RL) 和单步更新（Temporal-Difference update)想象强化学习就是在玩游戏, 游戏回合有开始和结束 回合更新(Monte-Carlo update RL) ：​ 指的是游戏开始后, 我们要等待游戏结束, 然后再总结这一回合中的所有转折点, 再更新我们的行为准则 方法： Monte-carlo learning 基础版的Policy learning …. 单步更新（Temporal-Difference update)：​ 在游戏进行中每一步都在更新, 不用等待游戏的结束, 这样我们就能边玩边学习了 方法： Q learning Sarsa 升级版Policy Gradients learning … 现在大多数学习都是Temporal-Difference update （因为有的强化学习问题并不属于回合问题，且单步更新训练速度快） 四、在线学习(On-Policy) 和离线学习（Off-Policy)在线学习(On-Policy) :​ 指必须本人在场, 并且一定是本人边玩边学习 方法： Sarsa Sarsa lambda ( 优化Sarsa算法) 离线学习（Off-Policy):特点： 可以选择自己玩 也可以选择看着别人玩，通过看别人玩，来学习别人的行为准则 同样是从过往的经验中学习, 但是这些过往的经历没必要是自己的经历, 任何人的经历都能被学习 或者我也不必要边玩边学习, 我可以白天先存储下来玩耍时的记忆, 然后晚上通过离线学习来学习白天的记忆 方法： Q learning Deep-Q-Network (更加强大的算法，可以让计算机学会玩电动) Reference: 强化学习方法汇总 (Reinforcement Learning)]]></content>
+      <categories>
+        <category>机器学习</category>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+        <tag>强化学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[堪称神器的Chrome插件推荐]]></title>
     <url>%2F2019%2F03%2F26%2F%E5%A0%AA%E7%A7%B0%E7%A5%9E%E5%99%A8%E7%9A%84Chrome%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90%2F</url>
     <content type="text"><![CDATA[注意: 没有翻墙的话是不能在Chrome里的Google网上商店下载插件的 ​ 没有翻墙可以去：https://www.chromefor.com/ 在此网站下载的是.CRX文件 ​ 如何安装离线Chrome插件?（.CRX文件） 1、OneTab当在Chrome中打开多个标签页的时候： 点击： 效果： Google商店下载 非官方网站下载 2、ChaZD划词翻译插件 鼠标在单词上双击即可翻译 用鼠标选择一句话 Google商店下载 非官方网站 3、Adblock Plus拦截广告插件，几乎可以拦截所有广告，如果有些拦截不了，还可以添加黑名单 （知乎、CSDN、电影网站、小说网站……） Google商店下载 非官方网站 4、Infinity 新标签页(Pro)打开一个新的标签页 5、新浪微博图床 Google商店下载 非官方网站 Reference: 有哪些实用且堪称神器的Chrome插件？吐血推荐！！！]]></content>
@@ -11,6 +24,37 @@
       <tags>
         <tag>Chrome</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[机器学习、深度学习入门教程]]></title>
+    <url>%2F2019%2F03%2F26%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[教程推荐介绍取自了解机器学习方法 (*可跳) 1.1 机器学习 (Machine Learning) 2.1 科普: 人工神经网络 VS 生物神经网络 2.2 神经网络 (Neural Network) 视频莫凡Python-机器学习（强烈推荐！！！） （强烈推荐！！！通俗易懂，能建立对于机器学习的大致认知，能对大致算法、应用有所了解，不在惧怕 缺点：理论方面不够深入，有志以后进行机器学习相关工作的可以阅读书籍或论文补足理论） 推荐学习顺序： 在机器学习前 - (零基础) Python基础语法 了解数据结构 (Numpy &amp; Pandas) 学会展示数据 (Matplotlib) 了解机器学习方法 (*可跳) 神经网络 Tensorflow (Google开发, 社区大) PyTorch (Facebook开发, 方便debug) Keras (类似Tensorflow, 推荐直接学Tensorflow) Theano (类似Tensorflow, 推荐直接学Tensorflow) 有监督/无监督/半监督/降维多功能包 (Sklearn) 机器人无师自通 (强化学习) 使用进化论的机器学习 (进化算法) 效率工具 代码管理维护 (Git) 远程/云端计算 (Linux基础) 网页爬虫 实战 从头做一个机器人手臂 从头做一个汽车状态分类器 吴恩达网易公开课-深度学习 （英语，但有中文字幕，缺点：缺少了一些课后练习，可以搜索引擎搜索 吴恩达深度学习 课后练习） 书籍1、深度学习 《动手学深度学习》 推荐！！！ 理论与实践并重, 有Kaggle(请看下边的介绍)的练习， 美中不足的是使用的是Mxnet框架，而不是TensorFlow 内容和结构： 本书内容大体可以分为3个部分： 第一部分（第1章至第3章）涵盖预备工作和基础知识。第1章介绍深度学习的背景。第2章提供动手学深度学习所需要的预备知识，例如，如何获取并运行本书中的代码。第3章包括深度学习最基础的概念和技术，如多层感知机和模型正则化。如果读者时间有限，并且只想了解深度学习最基础的概念和技术，那么只需阅读第一部分。 第二部分（第4章至第6章）关注现代深度学习技术。第4章描述深度学习计算的各个重要组成部分，并为实现后续更复杂的模型打下基础。第5章解释近年来令深度学习在计算机视觉领域大获成功的卷积神经网络。第6章阐述近年来常用于处理序列数据的循环神经网络。阅读第二部分有助于掌握现代深度学习技术。 第三部分（第7章至第10章）讨论计算性能和应用。第7章评价各种用来训练深度学习模型的优化算法。第8章检验影响深度学习计算性能的几个重要因素。第9章和第10章分别列举深度学习在计算机视觉和自然语言处理中的重要应用。这部分内容读者可根据兴趣选择阅读。 《神经⽹络与深度学习Neural Networks and Deep Learning》 （讲神经网络的，推荐全看！！！）（美）Michael Nielsen 著Xiaohu Zhu 译Freeman Zhang （内含有反向传播算法的证明，这算法真的很重要） 《解析卷积神经网络(深度学习实践手册)》 （讲卷积神经网络（CNN）的，可以先看《动手学深度学习》的卷积神经网络） 2、机器学习PS：需要高等数学（积分、求导、求梯度、求极值）、线性代数（基本矩阵运算、矩阵求导）、概率论（随机变量、分布、多维随机变量极其分布、期望、贝叶斯公式、极大似然估计），可以先看看书里的大致知识，看不懂再回去补充、回忆 ​ 《机器学习》 周志华 ​ 《统计学习方法》 李航 这两本可以对照着看，如果哪一本难以理解就看另一本或者结合网上的博客 推荐阅读：线性模型（线性回归、对率回归、LDA）、决策树（多变量决策树了解一下即可）、支持向量机、贝叶斯分类(朴素贝叶斯、半朴素贝叶斯)、聚类、降维 书籍资源-百度云盘下载提取码：4fi8 Kaggle大数据竞赛平台——Kaggle 入门 Kaggle 论文深入AI所有领域最优论文+代码查找神器：966个ML任务、8500+论文任你选-知乎 (上边链接是Paper with code的使用介绍) Paper with code]]></content>
+      <categories>
+        <category>机器学习</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+        <tag>AI</tag>
+        <tag>机器学习</tag>
+        <tag>深度学习</tag>
+        <tag>Sklearn</tag>
+        <tag>Mxnet</tag>
+        <tag>Tensorflow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[神经网络技巧]]></title>
+    <url>%2F2019%2F03%2F24%2F%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[神经网络技巧1、检验神经网络Reference: 检验神经网络 (Evaluation) 2、特征标准化 (Feature Normalization)1、minmax normalization (0 , 1) 2、std normalization (mean = 0, std = 1) Reference: 特征标准化 (Feature Normalization) 3、选取好用的特征(Good Features)以分类问题为例 1、避免无用信息，即：对于区分类别不大的特征要忽略掉 2、避免选取重复的特征，如：距离：1公里 = 2里，这两个特征是具有同样的意义的 3、避免复杂的特征，如：描述距离，两个地点的经纬度(A: 10,98 B：25,97)可以算出距离，但是已经有了一个A、B间的距离：3KM，我们选取复杂度更小的 Reference: 3.3 选择好特征 (Good Features) 4、处理不均衡的数据不均衡的数据，预测多的那一方准确率就能达到很高，神经网络在学习时,也会变成“多数派” 1、想办法获取更多的数据，使得数据均衡 2、换个评判方式 ​ 原因：对于不均衡数据，Accuracy和Cost变得不在那么重要（为什么不重要了？） ​ 使用F1 score（or F-score)评判： ​ Confusion Matrix —&gt; Precision &amp; Recall —-&gt; F1 Score(or F-score) 3、重组数据 砍掉多数部分的一些数据 对少数部分的数据进行复制和生成（具体怎么做？） 4、使用其他机器学习方法 ​ 如：决策树，不均衡类别的数据并不会对所生成的决策树的性能有所影响 ​ 原因：决策树的每一个非叶子节点都是样本的特征，只有叶子节点是分类，在最终分类之前决策树只利用到了样本的特征和特征值，在最终分类时 5、修改算法 ​ 例如：Sigmoid函数，在x = 0 时，f(0) = 0.5 当f(x) &gt; 0.5 时划分为正例 当f(x) &lt; 0.5 时划分为反例 我们可以适当的提升 f(x) &gt; ? 时的正反例划分，如：f(x) &gt; 0.8时划分为正例，f(x) &lt; 0.8时划分为反例 Reference: ​ 处理不均衡数据 (深度学习)! 5、激活函数(Activation Function)​ 使得线性不可分问题转化为一个非线性可分问题 Reference: ​ 激励函数 (Activation Function) 6、过拟合问题(Overfitting)模型在训练集性能上很好，在实际问题中性能很差 1、L1/L2/… regularization 2、dropout Reference: 过拟合 (Overfitting) 7、加速神经网络的训练 SGD Momentum AdaGrad RMSprop Adam Reference: 加速神经网络训练 (Speed Up Training) 8、批标准化（Batch Normalization）问题：输入层/隐藏层神经元的激活函数对于输入饱和 例如：对于Sigmoid函数，对于x &lt;= -5，x &gt;= 5的输入数据，神经元的输出变化值非常小(即：梯度会非常小)，激活函数对于过大过小的输入不敏感 我们可以说，输入数据的分布对于激活函数来说是很重要的 Reference: 批标准化 (Batch Normalization) 9、L1/L2 正规化（Regularization）Reference: L1 / L2 正规化 (Regularization) 神经网络的黑盒不黑​ 对于神经网络的每一层进行查看 ​ 特征(输入)—-&gt;代表特征—-&gt;更高级(抽象)的代表特征—-&gt;…..—-&gt;输出 ​ 其中： ​ ‘’—-&gt;“: 表示神经网络的一层对于上一层的输出的处理 ​ 输入、输出是我们人类所能理解的 ​ 而神经网络中间层的特征抽象是人类很难以理解的,但是对于计算机来说很容易理解 Reference: ​ 科普: 神经网络的黑盒不黑 (深度理解神经网络) 神经网络的进化​ 基于遗传算法、进化策略使得神经网络得以‘’代代进化‘’，即：每代神经网络对于目标问题的解更优，或说泛化误差更低。 Reference: ​ [什么是神经网络进化? What is Neuro-Evolution?](]]></content>
+      <categories>
+        <category>机器学习</category>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>神经网络</tag>
+        <tag>技巧</tag>
       </tags>
   </entry>
   <entry>
