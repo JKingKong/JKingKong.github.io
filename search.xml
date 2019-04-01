@@ -31,6 +31,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[堪称神器的Chrome插件推荐]]></title>
+    <url>%2F2019%2F03%2F26%2F%E5%A0%AA%E7%A7%B0%E7%A5%9E%E5%99%A8%E7%9A%84Chrome%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90%2F</url>
+    <content type="text"><![CDATA[注意: 没有翻墙的话是不能在Chrome里的Google网上商店下载插件的 ​ 没有翻墙可以去：https://www.chromefor.com/ 在此网站下载的是.CRX文件 ​ 如何安装离线Chrome插件?（.CRX文件） 1、OneTab当在Chrome中打开多个标签页的时候： 点击： 效果： Google商店下载 非官方网站下载 2、ChaZD划词翻译插件 鼠标在单词上双击即可翻译 用鼠标选择一句话 Google商店下载 非官方网站 3、Adblock Plus拦截广告插件，几乎可以拦截所有广告，如果有些拦截不了，还可以添加黑名单 （知乎、CSDN、电影网站、小说网站……） Google商店下载 非官方网站 4、Infinity 新标签页(Pro)打开一个新的标签页 5、新浪微博图床 Google商店下载 非官方网站 Reference: 有哪些实用且堪称神器的Chrome插件？吐血推荐！！！]]></content>
+      <categories>
+        <category>实用</category>
+        <category>非技术</category>
+      </categories>
+      <tags>
+        <tag>Chrome</tag>
+        <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[机器学习、深度学习入门教程]]></title>
     <url>%2F2019%2F03%2F26%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[教程推荐介绍取自了解机器学习方法 (*可跳) 1.1 机器学习 (Machine Learning) 2.1 科普: 人工神经网络 VS 生物神经网络 2.2 神经网络 (Neural Network) 视频莫凡Python-机器学习（强烈推荐！！！） （强烈推荐！！！通俗易懂，能建立对于机器学习的大致认知，能对大致算法、应用有所了解，不在惧怕 缺点：理论方面不够深入，有志以后进行机器学习相关工作的可以阅读书籍或论文补足理论） 推荐学习顺序： 在机器学习前 - (零基础) Python基础语法 了解数据结构 (Numpy &amp; Pandas) 学会展示数据 (Matplotlib) 了解机器学习方法 (*可跳) 神经网络 Tensorflow (Google开发, 社区大) PyTorch (Facebook开发, 方便debug) Keras (类似Tensorflow, 推荐直接学Tensorflow) Theano (类似Tensorflow, 推荐直接学Tensorflow) 有监督/无监督/半监督/降维多功能包 (Sklearn) 机器人无师自通 (强化学习) 使用进化论的机器学习 (进化算法) 效率工具 代码管理维护 (Git) 远程/云端计算 (Linux基础) 网页爬虫 实战 从头做一个机器人手臂 从头做一个汽车状态分类器 吴恩达网易公开课-深度学习 （英语，但有中文字幕，缺点：缺少了一些课后练习，可以搜索引擎搜索 吴恩达深度学习 课后练习） 书籍1、深度学习 《动手学深度学习》 推荐！！！ 理论与实践并重, 有Kaggle(请看下边的介绍)的练习， 美中不足的是使用的是Mxnet框架，而不是TensorFlow 内容和结构： 本书内容大体可以分为3个部分： 第一部分（第1章至第3章）涵盖预备工作和基础知识。第1章介绍深度学习的背景。第2章提供动手学深度学习所需要的预备知识，例如，如何获取并运行本书中的代码。第3章包括深度学习最基础的概念和技术，如多层感知机和模型正则化。如果读者时间有限，并且只想了解深度学习最基础的概念和技术，那么只需阅读第一部分。 第二部分（第4章至第6章）关注现代深度学习技术。第4章描述深度学习计算的各个重要组成部分，并为实现后续更复杂的模型打下基础。第5章解释近年来令深度学习在计算机视觉领域大获成功的卷积神经网络。第6章阐述近年来常用于处理序列数据的循环神经网络。阅读第二部分有助于掌握现代深度学习技术。 第三部分（第7章至第10章）讨论计算性能和应用。第7章评价各种用来训练深度学习模型的优化算法。第8章检验影响深度学习计算性能的几个重要因素。第9章和第10章分别列举深度学习在计算机视觉和自然语言处理中的重要应用。这部分内容读者可根据兴趣选择阅读。 《神经⽹络与深度学习Neural Networks and Deep Learning》 （讲神经网络的，推荐全看！！！）（美）Michael Nielsen 著Xiaohu Zhu 译Freeman Zhang （内含有反向传播算法的证明，这算法真的很重要） 《解析卷积神经网络(深度学习实践手册)》 （讲卷积神经网络（CNN）的，可以先看《动手学深度学习》的卷积神经网络） 2、机器学习PS：需要高等数学（积分、求导、求梯度、求极值）、线性代数（基本矩阵运算、矩阵求导）、概率论（随机变量、分布、多维随机变量极其分布、期望、贝叶斯公式、极大似然估计），可以先看看书里的大致知识，看不懂再回去补充、回忆 ​ 《机器学习》 周志华 ​ 《统计学习方法》 李航 这两本可以对照着看，如果哪一本难以理解就看另一本或者结合网上的博客 推荐阅读：线性模型（线性回归、对率回归、LDA）、决策树（多变量决策树了解一下即可）、支持向量机、贝叶斯分类(朴素贝叶斯、半朴素贝叶斯)、聚类、降维 书籍资源-百度云盘下载提取码：4fi8 Kaggle大数据竞赛平台——Kaggle 入门 Kaggle 论文深入AI所有领域最优论文+代码查找神器：966个ML任务、8500+论文任你选-知乎 (上边链接是Paper with code的使用介绍) Paper with code]]></content>
@@ -46,19 +59,6 @@
         <tag>Sklearn</tag>
         <tag>Mxnet</tag>
         <tag>Tensorflow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[堪称神器的Chrome插件推荐]]></title>
-    <url>%2F2019%2F03%2F26%2F%E5%A0%AA%E7%A7%B0%E7%A5%9E%E5%99%A8%E7%9A%84Chrome%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90%2F</url>
-    <content type="text"><![CDATA[注意: 没有翻墙的话是不能在Chrome里的Google网上商店下载插件的 ​ 没有翻墙可以去：https://www.chromefor.com/ 在此网站下载的是.CRX文件 ​ 如何安装离线Chrome插件?（.CRX文件） 1、OneTab当在Chrome中打开多个标签页的时候： 点击： 效果： Google商店下载 非官方网站下载 2、ChaZD划词翻译插件 鼠标在单词上双击即可翻译 用鼠标选择一句话 Google商店下载 非官方网站 3、Adblock Plus拦截广告插件，几乎可以拦截所有广告，如果有些拦截不了，还可以添加黑名单 （知乎、CSDN、电影网站、小说网站……） Google商店下载 非官方网站 4、Infinity 新标签页(Pro)打开一个新的标签页 5、新浪微博图床 Google商店下载 非官方网站 Reference: 有哪些实用且堪称神器的Chrome插件？吐血推荐！！！]]></content>
-      <categories>
-        <category>实用</category>
-        <category>非技术</category>
-      </categories>
-      <tags>
-        <tag>Chrome</tag>
-        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
