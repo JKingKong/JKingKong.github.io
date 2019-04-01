@@ -472,24 +472,30 @@
 <li><p>False Negatives，FN：预测为负样本，实际为正样本的特征数</p>
 </li>
 </ul>
-<h2 id="2、准确率（Accuracy）"><a href="#2、准确率（Accuracy）" class="headerlink" title="2、准确率（Accuracy）"></a>2、准确率（Accuracy）</h2><p>​    <strong>准确率（Accuracy）</strong>是模型预测正例、反例对的数量所占总样本数的比例<br>$$<br>A = \frac{TP + TN}{TP + FP +TN + FN}<br>$$<br>亦即：<br>$$<br>准确率 = \frac{预测对的数量}{总样本数量}<br>$$</p>
-<h2 id="3、精确度（Precision）"><a href="#3、精确度（Precision）" class="headerlink" title="3、精确度（Precision）"></a>3、精确度（Precision）</h2><p>​     <strong>精确度（Precision）</strong>是针对我们的<strong>预测结果</strong>而言的，它表示的是预测为正的样本中有多少是真正的正样本。</p>
+<h2 id="2、准确率（Accuracy）"><a href="#2、准确率（Accuracy）" class="headerlink" title="2、准确率（Accuracy）"></a>2、准确率（Accuracy）</h2><p>​    <strong>准确率（Accuracy）</strong>是模型预测正例、反例对的数量所占总样本数的比例</p>
+<script type="math/tex; mode=display">
+A = \frac{TP + TN}{TP + FP +TN + FN}</script><p>亦即：</p>
+<script type="math/tex; mode=display">
+准确率 = \frac{预测对的数量}{总样本数量}</script><h2 id="3、精确度（Precision）"><a href="#3、精确度（Precision）" class="headerlink" title="3、精确度（Precision）"></a>3、精确度（Precision）</h2><p>​     <strong>精确度（Precision）</strong>是针对我们的<strong>预测结果</strong>而言的，它表示的是预测为正的样本中有多少是真正的正样本。</p>
 <p><strong>预测为正有两种可能：</strong></p>
 <ol>
 <li>把样本正类预测为正类（TP）</li>
 <li>把样本负类预测为正类（FP）</li>
 </ol>
-<p>$$<br>P = \frac{TP}{TP + FP}<br>$$</p>
-<h2 id="4、召回率（Recall）"><a href="#4、召回率（Recall）" class="headerlink" title="4、召回率（Recall）"></a>4、召回率（Recall）</h2><p>​    <strong>召回率（Recall）</strong>是针对<strong>原来的样本</strong>而言的，它表示样本中的正例有多少被预测正确了</p>
+<script type="math/tex; mode=display">
+P = \frac{TP}{TP + FP}</script><h2 id="4、召回率（Recall）"><a href="#4、召回率（Recall）" class="headerlink" title="4、召回率（Recall）"></a>4、召回率（Recall）</h2><p>​    <strong>召回率（Recall）</strong>是针对<strong>原来的样本</strong>而言的，它表示样本中的正例有多少被预测正确了</p>
 <p><strong>预测有两种可能：</strong></p>
 <ol>
 <li>把样本正类预测成正类（TP）</li>
 <li>把样本正类预测为负类（FN）</li>
 </ol>
-<p>$$<br>R = \frac{TP}{TP + FN}<br>$$</p>
-<h2 id="5、F-SCORE"><a href="#5、F-SCORE" class="headerlink" title="5、F-SCORE"></a>5、F-SCORE</h2><p>​    有些时候<strong>单一</strong>的<strong>精确度（Precision）</strong>和<strong>召回率（Recall）</strong>高并不能很好的反映模型的真实性能。我们一般希望Precision和Recall尽可能都高。</p>
-<p>所以<strong>F-SCORE</strong>(或称<strong>F-Measure</strong>):<br>$$<br>F = \frac{P <em> R </em> 2}{P + R}<br>$$<br>or<br>$$<br>\frac{2}{F} = \frac{1}{P} + \frac{1}{Q}<br>$$</p>
-<h2 id="6、例子"><a href="#6、例子" class="headerlink" title="6、例子"></a>6、例子</h2><p>​    原始样本：60个是好瓜，40个是坏瓜，总数：100。    </p>
+<script type="math/tex; mode=display">
+R = \frac{TP}{TP + FN}</script><h2 id="5、F-SCORE"><a href="#5、F-SCORE" class="headerlink" title="5、F-SCORE"></a>5、F-SCORE</h2><p>​    有些时候<strong>单一</strong>的<strong>精确度（Precision）</strong>和<strong>召回率（Recall）</strong>高并不能很好的反映模型的真实性能。我们一般希望Precision和Recall尽可能都高。</p>
+<p>所以<strong>F-SCORE</strong>(或称<strong>F-Measure</strong>):</p>
+<script type="math/tex; mode=display">
+F = \frac{P * R * 2}{P + R}</script><p>or</p>
+<script type="math/tex; mode=display">
+\frac{2}{F} = \frac{1}{P} + \frac{1}{Q}</script><h2 id="6、例子"><a href="#6、例子" class="headerlink" title="6、例子"></a>6、例子</h2><p>​    原始样本：60个是好瓜，40个是坏瓜，总数：100。    </p>
 <p>​    你训练了一个选西瓜的模型。你的模型挑选出85个瓜。里边真实标记有50个好瓜，35个坏瓜。</p>
 <ul>
 <li>TP（将好瓜预测成好瓜）：40</li>
@@ -497,14 +503,17 @@
 <li>TN（将坏瓜预测成坏瓜）：20</li>
 <li>FN（将好瓜预测成坏瓜）：10</li>
 </ul>
-<p>$$<br>A = \frac{TP+TN}{TP+FP+TN+FN} = \frac{40+20}{85}= 70\%<br>$$</p>
-<p>$$<br>P =\frac{TP}{TP+FP} =\frac{40}{40 + 15} = 72.7272\%<br>$$</p>
-<p>$$<br>R = \frac{TP}{TP+FN}=\frac{40}{40 + 10} = 50\%<br>$$</p>
-<p>$$<br>F = \frac{P <em> R </em> 2}{P + R} = \frac{0.7272<em>0.5</em>2}{0.7272+0.5} = 59.25\%<br>$$</p>
-<p>看一张图：</p>
+<script type="math/tex; mode=display">
+A = \frac{TP+TN}{TP+FP+TN+FN} = \frac{40+20}{85}= 70\%</script><script type="math/tex; mode=display">
+P =\frac{TP}{TP+FP} =\frac{40}{40 + 15} = 72.7272\%</script><script type="math/tex; mode=display">
+R = \frac{TP}{TP+FN}=\frac{40}{40 + 10} = 50\%</script><script type="math/tex; mode=display">
+F = \frac{P * R * 2}{P + R} = \frac{0.7272*0.5*2}{0.7272+0.5} = 59.25\%</script><p>看一张图：</p>
 <p><img src="http://ww1.sinaimg.cn/large/005X0oIhly1g1lu8us4f2j30b40k7wew.jpg" alt></p>
-<h2 id="7、灵敏度-true-positive-rate-TPR-和特异度-false-positive-rate-FPR"><a href="#7、灵敏度-true-positive-rate-TPR-和特异度-false-positive-rate-FPR" class="headerlink" title="7、灵敏度(true positive rate ,TPR)和特异度(false positive rate, FPR)"></a>7、灵敏度(true positive rate ,TPR)和特异度(false positive rate, FPR)</h2><p>​    <strong>灵敏度(true positive rate ,TPR)</strong>，它是所有实际正例中，正确识别的正例比例，它和召回率的表达式没有区别。<br>$$<br>TPR = \frac{TP}{TP+FN}<br>$$<br>​    <strong>特异度(false positive rate, FPR)</strong>，它是实际负例中，错误得识别为正例的负例比例。<br>$$<br>FPR = \frac{FP}{FP+FN}<br>$$</p>
-<h2 id="8、RoC曲线和PR曲线"><a href="#8、RoC曲线和PR曲线" class="headerlink" title="8、RoC曲线和PR曲线"></a>8、RoC曲线和PR曲线</h2><p>​    <strong>RoC曲线：</strong>以<strong>TPR</strong>为<strong>**y轴，以</strong>FPR<strong>为</strong>x轴**。</p>
+<h2 id="7、灵敏度-true-positive-rate-TPR-和特异度-false-positive-rate-FPR"><a href="#7、灵敏度-true-positive-rate-TPR-和特异度-false-positive-rate-FPR" class="headerlink" title="7、灵敏度(true positive rate ,TPR)和特异度(false positive rate, FPR)"></a>7、灵敏度(true positive rate ,TPR)和特异度(false positive rate, FPR)</h2><p>​    <strong>灵敏度(true positive rate ,TPR)</strong>，它是所有实际正例中，正确识别的正例比例，它和召回率的表达式没有区别。</p>
+<script type="math/tex; mode=display">
+TPR = \frac{TP}{TP+FN}</script><p>​    <strong>特异度(false positive rate, FPR)</strong>，它是实际负例中，错误得识别为正例的负例比例。</p>
+<script type="math/tex; mode=display">
+FPR = \frac{FP}{FP+FN}</script><h2 id="8、RoC曲线和PR曲线"><a href="#8、RoC曲线和PR曲线" class="headerlink" title="8、RoC曲线和PR曲线"></a>8、RoC曲线和PR曲线</h2><p>​    <strong>RoC曲线：</strong>以<strong>TPR</strong>为<strong>**y轴，以</strong>FPR<strong>为</strong>x轴**。</p>
 <p>​    从FPR和TPR的定义可以理解，TPR越高，FPR越小，我们的模型和算法就越高效。也就是画出来的RoC曲线越靠近左上越好。从几何的角度讲，RoC曲线下方的面积越大越大，则模型越优。所以有时候我们用RoC曲线下的面积，即AUC（Area Under Curve）值来作为算法和模型好坏的标准。</p>
 <p><img src="http://ww1.sinaimg.cn/large/005X0oIhly1g1lul23zw6j30k609saap.jpg" alt></p>
 <p>　　<strong>PR曲线：</strong>以<strong>Precision</strong>为<strong>y</strong>轴，以<strong>Recall</strong>为<strong>x</strong>轴</p>
